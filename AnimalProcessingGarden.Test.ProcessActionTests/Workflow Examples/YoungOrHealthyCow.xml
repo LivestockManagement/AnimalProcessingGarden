@@ -1,0 +1,21 @@
+<Workflow>
+  <Workflows>
+    <Workflow>
+      <Workflows />
+      <SpecificationName>Processor.CowSpecification</SpecificationName>
+    </Workflow>
+    <Workflow>
+      <GroupCondition>Or</GroupCondition>
+      <Workflows>
+        <Workflow>
+          <Workflows />
+          <SpecificationName>Processor.HealthySpecification</SpecificationName>
+        </Workflow>
+        <Workflow>
+          <Workflows />
+          <SpecificationName>Processor.YoungSpecification</SpecificationName>
+        </Workflow>
+      </Workflows>
+    </Workflow>
+  </Workflows>
+</Workflow>

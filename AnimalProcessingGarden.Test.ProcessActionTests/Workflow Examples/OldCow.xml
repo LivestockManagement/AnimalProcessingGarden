@@ -1,0 +1,17 @@
+<Workflow>
+  <Workflows>
+    <Workflow>
+      <Workflows />
+      <SpecificationName>Processor.CowSpecification</SpecificationName>
+    </Workflow>
+    <Workflow>
+      <GroupCondition>Not</GroupCondition>
+      <Workflows>
+        <Workflow>
+          <Workflows />
+          <SpecificationName>Processor.YoungSpecification</SpecificationName>
+        </Workflow>
+      </Workflows>
+    </Workflow>
+  </Workflows>
+</Workflow>
