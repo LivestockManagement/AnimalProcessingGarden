@@ -9,7 +9,7 @@ namespace AnimalProcessingGarden.Business.RulesEngine.Specifications.Processor
     {
         public Outcome IsSatisfiedBy(IPackable package, Workflow workflow)
         {
-            Outcome outcome = new Outcome();
+            Outcome outcome = new Outcome(this.GetType());
             ProcessAction processAction = (ProcessAction)package.Entity;
             
             outcome.Result = (processAction.Animal.Location == processAction.Owner.Location);

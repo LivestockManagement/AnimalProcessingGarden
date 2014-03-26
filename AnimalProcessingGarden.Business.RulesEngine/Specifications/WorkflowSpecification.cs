@@ -11,7 +11,7 @@ namespace AnimalProcessingGarden.Business.RulesEngine.Specifications
         public Outcome IsSatisfiedBy(IPackable Package, Workflow Workflow)
         {
 
-            Outcome outcome = new Outcome();
+            Outcome outcome = new Outcome(this.GetType());
             outcome.Outcomes = new List<Outcome>();
 
             foreach (var workflow in Workflow.Workflows)

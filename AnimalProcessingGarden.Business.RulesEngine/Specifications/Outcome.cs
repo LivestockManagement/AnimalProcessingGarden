@@ -12,10 +12,10 @@ namespace AnimalProcessingGarden.Business.RulesEngine.Specifications
         public bool Result { get; set; }
         public List<Outcome> Outcomes;
 
-        public Outcome()
+        public Outcome(Type specificationType)
         {
             Result = true;
-            SpecificationType = typeof(WorkflowSpecification);
+            SpecificationType = specificationType;
         }
     }
 }
